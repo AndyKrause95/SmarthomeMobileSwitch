@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+	overflow: hidden;
+	font-size: 16px;
+	font-family: arial;
+}
+
+body {
+	background-color: rgba(30, 30, 30, 1);
+}
+
+.wrapper {
+	padding: 2.5%;
+	height: 25%;
+	width: 100%;
+}
+
+.double {
+	height: 50%;
+}
+
+.triple {
+	height: 75%;
+}
+
+.quattro {
+	height: 100%;
+}
+
+.rightSide, .leftSide {
+	height: 100%;
+	width: 50%;
+}
+
+.rightSide {
+	float: right;
+}
+
+.leftSide {
+	float: left;
+}
+
+.button, .sliderBox {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, rgba(50, 50, 50, 1), rgba(60, 60, 60, 1));
+	background: rgba(50, 50, 50, 1);
+	border-radius: 10px;
+	color: white;
+	font-size: 2rem;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	border-style: ridge;
+	border-width: 10px;
+	border-top-width: 50px;
+	border-bottom-width: 50px;
+	transition: border-color ease-out 0.25s;
+	display: flex;
+}
+
+.button {
+
+}
+
+.button[status=off], .sliderBox[status=off] {
+	border-color: rgba(255, 0, 0, 0.25);
+	color: white;
+}
+
+.button[status=on], .sliderBox[status=on]{
+	border-color: rgba(0, 255, 0, 0.5);
+	color: rgba(0, 255, 0, 1);
+}
+
+.sliderBox {
+	padding: 5px;
+	justify-content: flex-end;
+	flex-direction: column;
+	position: relative;
+}
+
+.sliderBox .sliderBar {
+	background: linear-gradient(to top, rgba(0, 255, 0, 0.5), rgba(0, 200, 0, 0.5));
+	width: 100%;
+	height: 0%;
+	transition: height ease-out 0.1s;
+	border-radius: 10px;
+}
+
+.sliderBox .sliderText {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	color: white;
+	font-size: 3rem;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+#container {
+	width: 100%
+	height: 100%;
+}

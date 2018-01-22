@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>HTML Test</title>
+		<link rel='stylesheet' type='text/css' href='style.css'>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<script src='script.js'></script>
+	</head>
+
+	<body>
+		<div id='container'>
+			<div class='leftSide'>
+				<div class='wrapper'><div class='button' ontouchstart ='buttonClicked(this)' status='off'>Decke</div></div>
+				<div class='wrapper'><div class='button' ontouchstart ='buttonClicked(this)' status='off'>Schrank</div></div>
+				<div class='wrapper'><div class='button' ontouchstart ='buttonClicked(this)' status='off'>Wand</div></div>
+				<div class='wrapper'><div class='button' ontouchstart ='buttonClicked(this)' status='off'>Fernseher</div></div>
+			</div>
+			<div class='rightSide'>
+				<div class='wrapper double'><div class='sliderBox' ontouchstart='sliderTouched(event, this)' ontouchmove='sliderTouched(event, this)' status='off' value='0'><div class='sliderText'>0%</div><div class='sliderBar'></div></div></div>
+				<div class='wrapper double'><div class='sliderBox' ontouchstart='sliderTouched(event, this)' ontouchmove='sliderTouched(event, this)' status='off' value='0'><div class='sliderText'>0%</div><div class='sliderBar'></div></div></div>
+			</div>
+		</div>
+	</body>
+</html>
