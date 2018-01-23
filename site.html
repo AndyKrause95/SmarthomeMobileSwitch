@@ -1,22 +1,28 @@
 <html>
 	<head>
 		<title>HTML Test</title>
-		<link rel='stylesheet' type='text/css' href='style.css'>
+		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<link rel='stylesheet' type='text/css' href='style.css'>
 		<script src='script.js'></script>
 	</head>
 
 	<body>
 		<div id='container'>
 			<div class='leftSide'>
-				<div class='wrapper'><div class='button' ontouchstart ='buttonClicked(this)' status='off'>Decke</div></div>
-				<div class='wrapper'><div class='button' ontouchstart ='buttonClicked(this)' status='off'>Schrank</div></div>
-				<div class='wrapper'><div class='button' ontouchstart ='buttonClicked(this)' status='off'>Wand</div></div>
-				<div class='wrapper'><div class='button' ontouchstart ='buttonClicked(this)' status='off'>Fernseher</div></div>
+				<div class='wrapper'><div class='button' onmousedown='buttonClicked(this, event)' ontouchstart='buttonClicked(this, event)' status='off' symconID='42301' statusID='41256'>Eckbank</div></div>
+				<div class='wrapper'><div class='blank'></div></div>
+				<div class='wrapper'><div class='blank'></div></div>
+				<div class='wrapper'><div class='blank'></div></div>
+				<div class='wrapper'><div class='blank'></div></div>
+				<div class='wrapper'><div class='button window' status='off' statusID='21334'>Haustür</div></div>
+				<!--<div class='wrapper'><div class='button' onmousedown='buttonClicked(this, event)' ontouchstart='buttonClicked(this, event)' status='off' symconID='0' statusID='0'>Schrank</div></div>-->
+				<!--<div class='wrapper'><div class='button' onmousedown='buttonClicked(this, event)' ontouchstart='buttonClicked(this, event)' status='off' symconID='0' statusID='0'>Wand</div></div>-->
+				<!--<div class='wrapper'><div class='button' onmousedown='buttonClicked(this, event)' ontouchstart='buttonClicked(this, event)' status='off' symconID='0' statusID='0'>Fernseher</div></div>-->
 			</div>
 			<div class='rightSide'>
-				<div class='wrapper double'><div class='sliderBox' ontouchstart='sliderTouched(event, this)' ontouchmove='sliderTouched(event, this)' status='off' value='0'><div class='sliderText'>0%</div><div class='sliderBar'></div></div></div>
-				<div class='wrapper double'><div class='sliderBox' ontouchstart='sliderTouched(event, this)' ontouchmove='sliderTouched(event, this)' status='off' value='0'><div class='sliderText'>0%</div><div class='sliderBar'></div></div></div>
+				<div class='wrapper double'><div class='sliderBox' ontouchstart='sliderTouched(event, this)' ontouchend='sliderSend(this)' ontouchmove='sliderTouched(event, this)' status='off' value='0' symconID='25345' statusID='53891'><div class='sliderText'>0%</div><div class='sliderBar'></div></div></div>
+				<div class='wrapper double'><div class='sliderBox' ontouchstart='sliderTouched(event, this)' ontouchend='sliderSend(this)' ontouchmove='sliderTouched(event, this)' status='off' value='0' symconID='51671' statusID='27644'><div class='sliderText'>0%</div><div class='sliderBar'></div></div></div>
 			</div>
 		</div>
 	</body>
